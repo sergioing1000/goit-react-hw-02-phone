@@ -36,7 +36,7 @@ class ContactForm extends Component {
       <div className={style.inputContent}>
         <form className={style.form} onSubmit={this.handleSubmit}>
           <div className={style.inputsCont}>
-            <p>Nombre </p>
+            <p>Name :</p>
 
             <input
               value={this.state.name}
@@ -48,7 +48,7 @@ class ContactForm extends Component {
               className={style.input}
               required
             />
-            <p>Numero</p>
+            <p>Number :</p>
             <input
               value={this.state.number}
               onChange={this.handleChange('number')}
@@ -61,7 +61,7 @@ class ContactForm extends Component {
             />
           </div>
           <button type="submit" className={style.buttonEditor}>
-            Añadir
+            Add Contact
           </button>
         </form>
       </div>
